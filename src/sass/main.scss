@@ -1,7 +1,18 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|zocial);
+
+
 *{
 	box-sizing: border-box;
 
 }
+
+/*body {
+	background-image: url("images/whitebrick.png");
+	background-attachment: fixed ,scroll;
+    background-repeat: no-repeat, repeat-y;
+
+}*/
+
 .page{
 	height: 100%;
 	width: 1200px;
@@ -33,6 +44,23 @@
 		border: 2px solid red;
 		margin: 8px;
 		border-radius: 3px;
+		display: flex;
+		justify-content: center;
+		
+		/* entypo/Facebook */
+          .entypo-facebook:before {
+            font-family: 'entypo', sans-serif;
+            
+          }
+
+          /* zocial /Twitter */
+          .zocial-twitter:before {
+            font-family: 'zocial', sans-serif;
+          }
+          /* brandico /Instagram*/
+          .brandico-instagram:before {
+            font-family: 'brandico', sans-serif;
+          }
 	}
 }
 
@@ -83,6 +111,7 @@
 
 .main_content {
 	height: 1000px;
+	//width: 800px;
 	border: 5px solid red;
 	border-radius: 3px;
 	margin-top: 10px;
@@ -95,10 +124,11 @@
 
 .info_box {
 	height: 900px;
-	width: 600px;
+	width: 70%;
 	border: 2px solid black;
 	border-radius: 3px;
 	margin-left: 10px;
+	margin-right:10px;
 	margin-top: 15px;
 	//align-self: auto;
 
@@ -106,7 +136,7 @@
 
 .photo_content {
 	height: 900px;
-	width: 520px;
+	width: 30%;
 	border: 2px solid black;
 	border-radius: 3px;
 	margin-right: 10px;
