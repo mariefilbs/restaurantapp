@@ -1,6 +1,7 @@
  	
 import _ from 'lodash';
 import $ from 'jquery';
+import {printNews} from "./news"
 
 function extractSpecial(data){
 	var menuArray=[];
@@ -77,3 +78,4 @@ function getSpecials (){
 }
 
 checkMenu();
+printNews();
