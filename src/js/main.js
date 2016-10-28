@@ -2,6 +2,7 @@
 import _ from 'lodash';
 import $ from 'jquery';
 import {printNews} from "./news"
+import {initMap} from "./location"
 
 function extractSpecial(data){
 	var menuArray=[];
@@ -10,25 +11,25 @@ function extractSpecial(data){
 	var entrees = data.entrees;
 	menuArray	=_.concat(sides,appetizers,entrees);
 
-	
-	console.log(menuArray);
-
 	var specialRequest = getSpecials();
 	specialRequest.then(function(specialData) {
 		var specialId = specialData.menu_item_id;
 		var special = menuArray.filter(function(menuItem) {
-			console.log(menuItem);
 				if(menuItem.id==specialId){
 					return true;	
 				}
 	 		return false;
 		});	
-		console.log(special);
+		var splTitle = special[0].item;
+		var splPrice =special[0].price;
+		var splDescription= special[0].description;
+		$(".spl-box").append(`<div class="spl-title">${splTitle}</div>
+					          <div class="spl-price">${splPrice}</div>
+					          <div class="spl-decription">${splDescription}</div>`)	
 	});
-
-	
-	console.log(menuArray);
 }
+
+
 function processSides(sides){
 	var price = sides.price;
 	var title = sides.item;
@@ -45,12 +46,10 @@ function processAppetizers(appetizers){
 }
 
 function getMenu(data){
-	console.log(data);
 	var i;
 	var sides = data.sides;
 	var appetizers = data.appetizers;
 	var entrees = data.entrees;
-	console.log(sides);
 	appetizers.forEach(processAppetizers);
 	entrees.forEach(processEntrees);
 	sides.forEach(processSides);
@@ -79,3 +78,4 @@ function getSpecials (){
 
 checkMenu();
 printNews();
+initMap();

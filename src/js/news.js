@@ -1,14 +1,12 @@
 import $ from 'jquery';
 
 function extractData(data){
-	console.log(data);
 	var date = data.date_published;
 	var title = data.title;
 	var article = data.post;
-	console.log(date);
-	console.log(title);
-	console.log(article);
-
+	$(".news-box").append(`<div class ="news-heading">${title}</div>
+            <div class="date">${date}</div>
+            <div class="news-content">${article}</div>`)
 }
 
 function printNews(){
