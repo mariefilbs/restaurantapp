@@ -24,10 +24,24 @@
       </div>
 
       <div class="top_content">
-        <div class="news"></div>
-        <div class="specials"></div>
-        <div class="location"></div>
+        <div class="news">
+         <div class="news-title"> Latest News </div>
+         <div class="news-box"></div>
+        </div>
+      
+        <div class="specials">
+        <div class="special"> Today's Special </div>
+        <div class="spl-img"></div>
+        <div class="spl-box"></div>
+        </div>
+
+        <div class="location">
+           <div id="map"></div>
+
+
+        </div>
       </div>
+    
 
       <main class ="main_content">
         <div class ="info_box"></div>
@@ -40,6 +54,10 @@
 
 
     </div>
+      <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf0PqgBFkikg9pCbKnJyfRpM1WLLv92c
+      &callback=initMap">
+      </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
