@@ -41,19 +41,57 @@
 
         </div>
       </div>
-    
+      <main class="main_content">
 
-      <main class ="main_content">
-        <div class ="info_box"></div>
-        <div class="photo_content">
-          <div class="title_box"></div>
-          <div class="photo_box"></div>
-        </div>
-      </main>
+        <div class ="info_box">
+          <ul class="tabs">
+            <li><a href= "javascript:void(0)" class="tablinks" name="story"> Our Story</a></li>
+            <li><a href= "javascript:void(0)" class="tablinks" name="menu" > Menu</a></li>
+            <li><a href= "javascript:void(0)" class="tablinks" name="reservation"> Reservation</a></li>
+          </ul>
 
+          <div class="tabContent" id="story">
+            <div class="story">
+               <p> It all started with two women who loved to entertain their friends with delicious food, wonderful wine, hand-crafted cocktails, and an inviting atmosphere. The culinary genius behind our menu is the wonderful, Ashima. She brings an eclectic mix of traditional French cuisine with a modern flavorful twist. Her partner, Marie, is the cocktail connoisseur who’s life passion is to make sure you get the perfect drink to bring out the flavors of your meal. Over time, their legendary dinner parties turned into exactly where you find yourself sitting today. 
+                We welcome you to La Petite Rose!</p>
+            </div>
+          </div>
+          <div class="tabContent" id="menu">
+              <div class="appetizers"></div>
+              <div class="entrees"></div>
+              <div class="sides"></div>
+          </div>
 
-
+          <div class="tabContent" id="reservation">
+              <div class="reserve">
+                <form action="">
+                  <div class="name"> Full Name  </div>
+                  <input id="postName" type="text">
+                  <div class="guests"> Number Of Guests </div>
+                  <input id="postGuests" type="text">
+                  <div class="date"> Date  </div>
+                  <input id="postDate" type="text">
+                  <div class="notes"> Special Notes </div>
+                  <input id="postNotes" type="text">
+                  <div class ="seatingPref">
+                    <select id="seating">
+                      <option value="indoor">Indoor</option>
+                      <option value="outdoor">Outdoor</option>
+                    </select>
+                  </div>
+                  <div class ="button">
+                    <button type="button">Reserve Table</button>
+                  </div>
+                </div>
     </div>
+        
+      </main>
+      
+
+
+
+
+    
       <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf0PqgBFkikg9pCbKnJyfRpM1WLLv92c
       &callback=initMap">

@@ -150,6 +150,7 @@
 }
 
 .info_box {
+	display:inline-block;
 	height: 900px;
 	width: 65%;
 	border: 2px solid black;
@@ -157,11 +158,31 @@
 	margin-left: 10px;
 	margin-right:10px;
 	margin-top: 15px;
-	//align-self: auto;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
 
+li {
+	display: inline-block;
+}
+.tabContent {
+	display: none;
+}
+#menu{
+	font-size: 15px;
+}
+.mtitle{
+	display:inline-block;
+	color:green;
+}
+.mprice{
+	display:inline-block;
 }
 
 .photo_content {
+	display:inline-block;
 	height: 900px;
 	width: 30%;
 	border: 2px solid black;

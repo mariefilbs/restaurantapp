@@ -3,6 +3,7 @@ import _ from 'lodash';
 import $ from 'jquery';
 import {printNews} from "./news"
 import {initMap} from "./location"
+import {openContent} from "./tabs"
 
 function extractSpecial(data){
 	var menuArray=[];
@@ -33,16 +34,23 @@ function extractSpecial(data){
 function processSides(sides){
 	var price = sides.price;
 	var title = sides.item;
+	$(".sides").append(`<div class="mtitle">${title}</div><div class="mprice">${price}</div></br>`)
 	
 }
 function processEntrees(entrees){
 	var price = entrees.price;
 	var title = entrees.item;
+	var description =entrees.description;
+	$(".entrees").append(`<div class="mtitle">${title}</div><div class="mprice">${price}</div>
+							<div class="mdescrip">${description}</div>`)
 		
 }
 function processAppetizers(appetizers){
 	var price = appetizers.price;
 	var title = appetizers.item;
+	var description =appetizers.description;
+	$(".appetizers").append(`<div class="mtitle">${title}</div><div class="mprice">${price}</div>
+							<div class="mdescrip">${description}</div>`)
 }
 
 function getMenu(data){
@@ -76,6 +84,13 @@ function getSpecials (){
 	})
 }
 
+function initTabs() {
+	$(".tablinks").click(function() {
+		openContent();
+	});
+}
+
 checkMenu();
 printNews();
+initTabs();
 initMap();
