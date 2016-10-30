@@ -95,4 +95,4 @@ checkMenu();
 printNews();
 initTabs();
 requestPhotos(); 
-initMap();
+//initMap();
