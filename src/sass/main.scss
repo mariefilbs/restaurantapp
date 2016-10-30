@@ -24,7 +24,6 @@ html {
 }
 
 .header {
-	height: 200px;
 	border: 3px solid black;
 	border-radius: 10px;
 	margin: 10px;
@@ -32,6 +31,7 @@ html {
 	justify-content: space-between;
 
 	.logo {
+
 		height: 180px;
 		//width: 200px;
 		//border: 2px solid red;
@@ -44,7 +44,6 @@ html {
 
 	}
 	.media {
-		height: 180px;
 		width: 200px;
 		//border: 2px solid red;
 		margin: 8px;
@@ -89,7 +88,6 @@ html {
 }
 
 .top_content{
-	height: 200px;
 	border: 3px solid black;
 	border-radius: 3px;
 	margin-top: 375px;
@@ -101,7 +99,6 @@ html {
 
 
 .news {
-	height: 160px;
 	width: 30%; 
 	border: 2px solid red;
 	border-radius: 3px;
@@ -124,13 +121,15 @@ html {
 	
 }
 .specials {
-	height: 160px;
 	width: 30%; 
 	border: 2px solid red;
 	border-radius: 3px;
 	margin-top: 15px;
 	display:inline-block;
 
+}
+.spl-img{
+	height:20px;
 }
 .spl-title{
 	display:inline-block;
@@ -143,7 +142,6 @@ html {
     width: 100%;
 }
 .location {
-	height: 160px;
 	width: 30%; 
 	border: 2px solid red;
 	border-radius: 3px;
@@ -152,8 +150,6 @@ html {
 }
 
 .main_content {
-	height: 1000px;
-	//width: 800px;
 	border: 5px solid red;
 	border-radius: 3px;
 	margin-top: 10px;
@@ -165,25 +161,72 @@ html {
 }
 
 .info_box {
-	height: 900px;
+	display:inline-block;
 	width: 65%;
 	border: 2px solid black;
 	border-radius: 3px;
 	margin-left: 10px;
 	margin-right:10px;
 	margin-top: 15px;
-	//align-self: auto;
-
+}
+a{
+	text-decoration:none;
+	color:black;
 }
 
+li {
+	display: inline-block;
+}
+.tabContent {
+	display: none;
+}
+.menu-title{
+	margin-bottom:10px;
+}
+#menu{
+	font-size: 15px;
+}
+.mtitle{
+	display:inline-block;
+	color:black;
+	font-weight: bold;
+	font-size:17px;
+	margin-bottom:10px;
+	font-family:sans-serif;
+}
+.mprice{
+	display:inline-block;
+	float:right;
+}
+.mdescrip{
+	font-size: 11px;
+	margin-bottom:12px;
+
+}
+.appetizer-title{
+	margin-bottom:15px;
+}
+.entrees-title{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.sides-title{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+
 .photo_content {
-	height: 900px;
+	display:inline-block;
 	width: 30%;
 	border: 2px solid black;
 	border-radius: 3px;
 	margin-right: 10px;
 	margin-top: 15px;
-	//align-self: flex-end;
+}
+.foodImg{
+	width:100%;
+	height:300px;
 }
 
 

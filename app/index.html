@@ -15,7 +15,7 @@
       <div class="header">
         <div class="logo">La Petite Rose</div>
         <div class="media">
-           <button class="entypo-facebook"type="button" name="Facebook"></button>
+          <a href="https://www.facebook.com/?stype=lo&jlou=AfeQPmS0trbdv9shH-PM8EYYZ6MRPHlg6wsT2jfSVfePI0euPydN07qS8ATZXVw1tMYRO2wX3goyaI5YjrjvAMaQ9we3W2t5DQsSxKqTfW3ipg&smuh=19547&lh=Ac-rHAIBx9ZDS7lS"> <button class="entypo-facebook"type="button" name="Facebook"></button></a>
             <button class="zocial-twitter" type="button" name="twitter"></button>
             <button class="brandico-instagram"type="button" name="Instagram"></button>  
         </div>
@@ -33,7 +33,8 @@
       
         <div class="specials">
         <div class="special"> Today's Special </div>
-        <div class="spl-img"></div>
+        <div class="spl-img" style="background-image: url('http:\/\/i.imgur.com\/741QzUS.jpg'); width: 300px; height: 100px; background-repeat: contain; background-size: 300px 100px;">
+        </div>
         <div class="spl-box"></div>
         </div>
 
@@ -43,19 +44,74 @@
 
         </div>
       </div>
-    
+      <main class="main_content">
 
-      <main class ="main_content">
-        <div class ="info_box"></div>
-        <div class="photo_content">
-          <div class="title_box"></div>
-          <div class="photo_box"></div>
+        <div class ="info_box">
+          <ul class="tabs">
+            <li><a href= "javascript:void(0)" class="tablinks" name="story"> Our Story</a></li>
+            <li><a href= "javascript:void(0)" class="tablinks" name="menu" > Menu</a></li>
+            <li><a href= "javascript:void(0)" class="tablinks" name="reservation"> Reservation</a></li>
+          </ul>
+
+          <div class="tabContent" id="story" style="display:block">
+            <div class="story">
+               <p> It all started with two women who loved to entertain their friends with delicious food, wonderful wine, hand-crafted cocktails, and an inviting atmosphere. The culinary genius behind our menu is the wonderful, Ashima. She brings an eclectic mix of traditional French cuisine with a modern flavorful twist. Her partner, Marie, is the cocktail connoisseur who’s life passion is to make sure you get the perfect drink to bring out the flavors of your meal. Over time, their legendary dinner parties turned into exactly where you find yourself sitting today. 
+                We welcome you to La Petite Rose!</p>
+            </div>
+          </div>
+          <div class="tabContent" id="menu">
+            <div class="menu-title"> Our Dinner Selection </div>
+            <div class="appetizer-title">APPETIZERs...</div>
+              <div class="appetizers"></div>
+              <div class="entrees-title">ENTREES</div>
+              <div class="entrees"></div>
+              <div class="sides-title">SIDES A LA CARTE </div>
+              <div class="sides"></div>
+          </div>
+
+          <div class="tabContent" id="reservation">
+              <div class="reserve">
+                <form action="">
+                  <div class="name"> Full Name  </div>
+                  <input id="postName" type="text">
+                  <div class="guests"> Number Of Guests </div>
+                  <input id="postGuests" type="text">
+                  <div class="date"> Date  </div>
+                  <input id="postDate" type="text">
+                  <div class="notes"> Special Notes </div>
+                  <input id="postNotes" type="text">
+                </form>
+                  <div class ="seatingPref">
+                    <select id="seating">
+                      <option value="indoor">Indoor</option>
+                      <option value="outdoor">Outdoor</option>
+                    </select>
+                  </div>
+                  <div class ="button">
+                    <button type="button">Reserve Table</button>
+                  </div>
+                </div>
+          </div>
         </div>
+        <div class="photo_content">
+          <div class="photo-title"> Food Photos...</div>
+          <div class="photos"></div>
+        </div>
+        
       </main>
-
-
-
-    </div>
+      <script type="text/javascript">
+        function initMap() {
+        var atlanta = {lat: 33.751, lng:  -84.391};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16 ,
+          center: atlanta,
+        });
+        var marker = new google.maps.Marker({
+          position: atlanta,
+          map: map
+        });
+      }
+      </script>
       <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf0PqgBFkikg9pCbKnJyfRpM1WLLv92c
       &callback=initMap">
