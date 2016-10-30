@@ -2,7 +2,6 @@
 import _ from 'lodash';
 import $ from 'jquery';
 import {printNews} from "./news"
-import {initMap} from "./location"
 import {openContent} from "./tabs"
 import {requestPhotos} from "./foodphoto"
 
@@ -95,4 +94,3 @@ checkMenu();
 printNews();
 initTabs();
 requestPhotos(); 
-//initMap();
