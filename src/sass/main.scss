@@ -5,11 +5,20 @@
 	box-sizing: border-box;
 
 }
+
+html {
+	background-image: url("../images/whitebrick.png");
+	background-size: cover;
+	//background-attachment: fixed ,scroll;
+    //background-repeat: no-repeat, repeat-y;
+
+}
+
 .page{
 	height: 100%;
 	width: 1200px;
 	margin: auto;
-	border: 1px solid red;
+	//border: 1px solid red;
 	position: relative;
 	
 }
@@ -22,24 +31,38 @@
 	justify-content: space-between;
 
 	.logo {
-		width: 200px;
-		border: 2px solid red;
-		margin: 8px;
+
+		height: 180px;
+		//width: 200px;
+		//border: 2px solid red;
+		margin-top: 110px;
+		margin-left: 50px;
 		align-self: center;
 		border-radius: 3px;
+		font-family: 'Lobster', cursive;
+		font-size: 65px;
+
 	}
 	.media {
 		width: 200px;
-		border: 2px solid red;
+		//border: 2px solid red;
 		margin: 8px;
 		border-radius: 3px;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+		align-items: center;
 		
 		/* entypo/Facebook */
+		button {
+			background-color: white;
+		}
           .entypo-facebook:before {
             font-family: 'entypo', sans-serif;
-            
+            border: none;
+            background-color: white;
+            height: 20px;
+            width: 20px;
+
           }
 
           /* zocial /Twitter */
@@ -55,10 +78,12 @@
 
 .inside_view img{
 	height: 350px;
-	width: 95%;
+	width: 99%;
 	position: absolute;
 	margin: 10px;
-	padding-left: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 100px;
 
 }
 
