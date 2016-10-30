@@ -155,16 +155,41 @@ li {
 .tabContent {
 	display: none;
 }
+.menu-title{
+	margin-bottom:10px;
+}
 #menu{
 	font-size: 15px;
 }
 .mtitle{
 	display:inline-block;
-	color:green;
+	color:black;
+	font-weight: bold;
+	font-size:17px;
+	margin-bottom:10px;
+	font-family:sans-serif;
 }
 .mprice{
 	display:inline-block;
+	float:right;
 }
+.mdescrip{
+	font-size: 11px;
+	margin-bottom:12px;
+
+}
+.appetizer-title{
+	margin-bottom:15px;
+}
+.entrees-title{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.sides-title{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
 
 .photo_content {
 	display:inline-block;

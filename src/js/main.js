@@ -67,6 +67,7 @@ function getMenu(data){
 	
 function checkMenu (){
 	var menu = requestMenu();
+	console.log(menu);
 	menu.then(getMenu);
 	menu.then(extractSpecial);
 }
