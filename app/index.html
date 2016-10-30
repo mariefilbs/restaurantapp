@@ -13,7 +13,7 @@
       <div class="header">
         <div class="logo">LOGO</div>
         <div class="media">
-           <button class="entypo-facebook"type="button" name="Facebook"></button>
+          <a href="https://www.facebook.com/?stype=lo&jlou=AfeQPmS0trbdv9shH-PM8EYYZ6MRPHlg6wsT2jfSVfePI0euPydN07qS8ATZXVw1tMYRO2wX3goyaI5YjrjvAMaQ9we3W2t5DQsSxKqTfW3ipg&smuh=19547&lh=Ac-rHAIBx9ZDS7lS"> <button class="entypo-facebook"type="button" name="Facebook"></button></a>
             <button class="zocial-twitter" type="button" name="twitter"></button>
             <button class="brandico-instagram"type="button" name="Instagram"></button>  
         </div>
@@ -31,7 +31,8 @@
       
         <div class="specials">
         <div class="special"> Today's Special </div>
-        <div class="spl-img"></div>
+        <div class="spl-img" style="background-image: url('http:\/\/i.imgur.com\/741QzUS.jpg'); width: 300px; height: 100px; background-repeat: contain; background-size: 300px 100px;">
+        </div>
         <div class="spl-box"></div>
         </div>
 
@@ -50,7 +51,7 @@
             <li><a href= "javascript:void(0)" class="tablinks" name="reservation"> Reservation</a></li>
           </ul>
 
-          <div class="tabContent" id="story">
+          <div class="tabContent" id="story" style="display:block">
             <div class="story">
                <p> It all started with two women who loved to entertain their friends with delicious food, wonderful wine, hand-crafted cocktails, and an inviting atmosphere. The culinary genius behind our menu is the wonderful, Ashima. She brings an eclectic mix of traditional French cuisine with a modern flavorful twist. Her partner, Marie, is the cocktail connoisseur who’s life passion is to make sure you get the perfect drink to bring out the flavors of your meal. Over time, their legendary dinner parties turned into exactly where you find yourself sitting today. 
                 We welcome you to La Petite Rose!</p>
@@ -73,6 +74,7 @@
                   <input id="postDate" type="text">
                   <div class="notes"> Special Notes </div>
                   <input id="postNotes" type="text">
+                </form>
                   <div class ="seatingPref">
                     <select id="seating">
                       <option value="indoor">Indoor</option>
@@ -83,15 +85,14 @@
                     <button type="button">Reserve Table</button>
                   </div>
                 </div>
-    </div>
+          </div>
+        </div>
+        <div class="photo_content">
+          <div class="photo-title"> Food Photos...</div>
+          <div class="photos"></div>
+        </div>
         
-      </main>
-      
-
-
-
-
-    
+      </main>      
       <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf0PqgBFkikg9pCbKnJyfRpM1WLLv92c
       &callback=initMap">

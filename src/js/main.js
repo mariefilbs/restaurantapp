@@ -4,6 +4,7 @@ import $ from 'jquery';
 import {printNews} from "./news"
 import {initMap} from "./location"
 import {openContent} from "./tabs"
+import {requestPhotos} from "./foodphoto"
 
 function extractSpecial(data){
 	var menuArray=[];
@@ -93,4 +94,5 @@ function initTabs() {
 checkMenu();
 printNews();
 initTabs();
+requestPhotos(); 
 initMap();
