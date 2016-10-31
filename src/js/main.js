@@ -56,7 +56,7 @@ function processEntrees(entrees){
 		<div class="divTableRow">
 		<div class="divTableCell mdescrip">${description}</div>
 		<div class="divTableCell" style="width: 130px; border-left: 1px solid black;">
-			<span class="icons"><i class="material-icons" onmouseover="document.getElementById('hoverDivEntrees${entrees.id}').style.display='block';" onmouseout="document.getElementById('hoverDivEntrees${entrees.id}').style.display='none';">announcement</i><div class="hoverDivContainer"><div id="hoverDivEntrees${entrees.id}" class="hoverDiv" style="display: none;">Lorem ipsum</div></div><i class="material-icons" style="width:25px;">star_rate</i><i class="material-icons">keyboard_arrow_down</i>
+			<span class="icons"><i class="material-icons">announcement</i><i class="material-icons" style="width:25px;">star_rate</i><i class="material-icons">keyboard_arrow_down</i>
 		<i class="material-icons">whatshot</i>
 		</div>
 		</div>
