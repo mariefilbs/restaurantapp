@@ -7,7 +7,7 @@
 }
 
 html {
-	background-image: url("../images/whitebrick.png");
+	//background-image: url("../images/whitebrick.png");
 	background-size: cover;
 	//background-attachment: fixed ,scroll;
     //background-repeat: no-repeat, repeat-y;
@@ -23,8 +23,17 @@ html {
 	
 }
 
+.logoimg {
+	height: 400px;
+	width: 400px;
+	padding-bottom: 50px;
+	margin-top: -135px;
+	margin-left: -75px;
+
+}
+
 .header {
-	border: 3px solid black;
+	//border: 3px solid black;
 	border-radius: 10px;
 	margin: 10px;
 	display: flex;
@@ -39,8 +48,7 @@ html {
 		margin-left: 50px;
 		align-self: center;
 		border-radius: 3px;
-		font-family: 'Lobster', cursive;
-		font-size: 65px;
+		//font-family: 'Cookie', cursive;
 
 	}
 	.media {
@@ -51,29 +59,19 @@ html {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}	
 		
-		/* entypo/Facebook */
 		button {
 			background-color: white;
+			border: none;
 		}
-          .entypo-facebook:before {
-            font-family: 'entypo', sans-serif;
-            border: none;
-            background-color: white;
-            height: 20px;
-            width: 20px;
+    
+    .media_logos{
+    	height: 60px;
+    	width: 60px;
+    	margin-left: -15px;
 
-          }
-
-          /* zocial /Twitter */
-          .zocial-twitter:before {
-            font-family: 'zocial', sans-serif;
-          }
-          /* brandico /Instagram*/
-          .brandico-instagram:before {
-            font-family: 'brandico', sans-serif;
-          }
-	}
+    }
 }
 
 .inside_view img{
@@ -82,25 +80,29 @@ html {
 	position: absolute;
 	margin: 10px;
 	padding-left: 20px;
-	padding-right: 20px;
-	border-radius: 100px;
+	padding-right: 15px;
+	border-radius: 75px;
 
 }
 
 .top_content{
-	border: 3px solid black;
+	height: 275px;
+	//border: 3px solid black;
 	border-radius: 3px;
 	margin-top: 375px;
 	margin-left: 10px;
 	margin-right: 10px;
 	display: flex;
 	justify-content: space-around;
+    font-family: 'PT Sans Caption', sans-serif;
+
+
 }
 
 
 .news {
 	width: 30%; 
-	border: 2px solid red;
+	//border: 2px solid red;
 	border-radius: 3px;
 	margin-top: 15px;
 	text-overflow: hidden;
@@ -109,8 +111,18 @@ html {
 .news-heading{
 	display: inline-block;
 	width:60%;
+	padding-top: 15px;
+	text-align: center;
 
 }
+
+.news-title {
+	font-size: 40px;
+	text-align: center;
+	border: 2px dotted black;
+	border-radius: 3px;
+}
+
 .date{
 	display:inline-block;
 
@@ -118,22 +130,36 @@ html {
 .news-content{
 	height:100px;
 	overflow: hidden;
+	padding-top: 35px;
 	
 }
 .specials {
 	width: 30%; 
-	border: 2px solid red;
+	//border: 2px solid red;
 	border-radius: 3px;
 	margin-top: 15px;
 	display:inline-block;
 
 }
+
+.special {
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 15px;
+
+} 
+
 .spl-img{
 	height:20px;
+	border-radius: 20px;
+	
 }
 .spl-title{
 	display:inline-block;
 }
+.spl-description {
+}
+
 .spl-price{
 	display:inline-block;
 }
@@ -143,7 +169,7 @@ html {
 }
 .location {
 	width: 30%; 
-	border: 2px solid red;
+	//border: 2px solid red;
 	border-radius: 3px;
 	margin-top: 15px;
 	display: inline-block;
@@ -228,6 +254,3 @@ li {
 	width:100%;
 	height:300px;
 }
-
-
-
