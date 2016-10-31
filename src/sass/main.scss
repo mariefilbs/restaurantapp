@@ -5,15 +5,6 @@
 	box-sizing: border-box;
 
 }
-
-html {
-	background-image: url("../images/whitebrick.png");
-	background-size: cover;
-	//background-attachment: fixed ,scroll;
-    //background-repeat: no-repeat, repeat-y;
-
-}
-
 .page{
 	height: 100%;
 	width: 1200px;
@@ -24,8 +15,7 @@ html {
 }
 
 .header {
-	border: 3px solid black;
-	border-radius: 10px;
+	
 	margin: 10px;
 	display: flex;
 	justify-content: space-between;
@@ -83,12 +73,11 @@ html {
 	margin: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	border-radius: 100px;
+	
 
 }
 
 .top_content{
-	border: 3px solid black;
 	border-radius: 3px;
 	margin-top: 375px;
 	margin-left: 10px;
@@ -96,8 +85,8 @@ html {
 }
 .topbar{
 	width: 30%;
-	height:200px;
-	border: 2px solid red;
+	height:220px;
+	border: 2px solid lightgray;
 	margin: 15px 1.5%;
 	float:left;
 	padding:10px;
@@ -119,30 +108,47 @@ html {
 .news-heading{
 	display: inline-block;
 	width:60%;
+	font-weight:bold;
+	font-style:italic;
+	font-size:14px;
 
 }
 .date{
-	display:inline-block;
+	float:right;
+	font-weight:bold;
+	font-style:italic;
+	font-size:14px;
 
 }
 .news-content{
-	height:100px;
 	overflow: hidden;
+	margin-top:10px;
 	
 }
 
 .spl-img{
 	text-align: center;
+	margin-bottom:8px;
 	img{
 		height:100px;
+		border: 1px solid lightgrey;
 	}
 
 }
 .spl-title{
 	display:inline-block;
+	font-weight:bold;
+	font-style:italic;
+	font-size:12px;
 }
 .spl-price{
-	display:inline-block;
+	float:right;
+	font-weight:bold;
+	font-style:italic;
+	font-size:12px;
+}
+.spl-decription{
+	margin-top:8px;
 }
 #map {
     height: 120px;
@@ -151,26 +157,37 @@ html {
     margin-right: 20px;
     margin-top: 10px;
 }
+.address{
+	text-align:center;
+	margin-top:7px;
+	margin-bottom:7px;
+
+}
+.phone{
+	text-align:center;
+	margin-bottom:7px;
+
+}
 
 .clear{
 	clear:both;
 }
 
 .main_content {
-	border: 5px solid red;
 	border-radius: 3px;
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-
-
+}
+.story{
+	font-size:12px;
+	font-family:sans-serif;
+	line-height:27px;
 }
 
 .info_box {
-	display:inline-block;
+	float:left;
 	width: 65%;
-	border: 2px solid black;
-	border-radius: 3px;
 	margin-left: 10px;
 	margin-right:10px;
 	margin-top: 15px;
@@ -188,9 +205,28 @@ li {
 }
 .tabContent {
 	display: none;
+	margin-left:50px;
+
+}
+.tablinks{
+	border: 1px solid lightgray;
+	border-bottom:none;
+	padding:10px;
 }
 .menu-title{
-	margin-bottom:10px;
+	margin-bottom:15px;
+	margin-top:25px;
+	font-style:italic;
+	font-size:18px;
+	padding-bottom:7px;
+	border-bottom: 5px solid lightgrey;
+
+}
+.menu-caption{
+	font-style:italic;
+	font-size:18px;
+	padding-bottom:7px;
+	border-bottom: 2px solid lightgrey;
 }
 #menu{
 	font-size: 15px;
@@ -226,18 +262,51 @@ li {
 .material-icons{
 	border: 1px solid black;
 }
+#postName{
+width: 250px;
+border-radius: 4px;
+margin-top:10px;
+margin-bottom:10px;
+}
+#postGuests{
+width: 120px;
+border-radius: 4px;
+margin-top:10px;
+margin-bottom:10px;
 
+}
+#postDate{
+width: 100px;
+border-radius: 4px;
+margin-top:10px;
+margin-bottom:10px;
+
+}
+#postNotes{
+width: 340px;
+height:100px;
+border-radius: 3px;
+margin-top:10px;
+margin-bottom:10px;
+}
+#seating{
+	width:120px;
+	margin-top:10px;
+	margin-bottom:25px;
+}
+#select{
+	padding:13px;
+}
 .photo_content {
-	display:inline-block;
+	float:left;
 	width: 30%;
-	border: 2px solid black;
-	border-radius: 3px;
 	margin-right: 10px;
 	margin-top: 15px;
 }
 .foodImg{
-	width:100%;
+	width:300px;
 	height:300px;
+	margin: 20px;
 }
 
 .divTable{
@@ -271,4 +340,16 @@ li {
 	display: table-row-group;
 }
 
+.hoverDivContainer {
+	position: relative; 
+	display: inline;
+}
 
+.hoverDiv {
+	position: absolute; 
+	top: 20px; 
+	height: 100px; 
+	width: 300px; 
+	border: 1px solid black; 
+	background-color: white; 
+}
