@@ -13,7 +13,7 @@ function extractPhoto(object){
 	var selectImages = _.drop(imageArray, imageArray.length - 5);
 	var i;
 	for(i=0;i<selectImages.length;i++){
-		$(".photos").append(`<div class="foodImg" style="background-image: url('${selectImages[i]}')"></div>`);
+		$(".photos").append(`<div class="foodImg" style="background-image: url('${selectImages[i]}'); background-size: cover;"></div>`);
 	}
 }
 

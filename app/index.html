@@ -6,7 +6,12 @@
     <title>Group Project</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
   <link href="https://fonts.googleapis.com/css?family=Cookie|Gudea|Hind+Guntur|Istok+Web|Josefin+Slab|Lobster|Lobster+Two|PT+Sans+Caption|Philosopher|Raleway" rel="stylesheet">
+
 
 
   </head>
@@ -36,23 +41,28 @@
       </div>
 
       <div class="top_content">
-        <div class="news">
-         <div class="news-title"> Latest News </div>
+        <div class="news topbar" >
+         <div class="caption"> Latest News </div>
          <div class="news-box"></div>
         </div>
       
-        <div class="specials">
-        <div class="special"> Today's Special </div>
-        <div class="spl-img" style="background-image: url('http:\/\/i.imgur.com\/741QzUS.jpg'); width: 300px; height: 100px; background-repeat: contain; background-size: 300px 100px;">
+        <div class="specials topbar">
+        <div class="caption"> Today's Special </div>
+        <div class="spl-img">
+          <img src ="http://i.imgur.com/741QzUS.jpg">
         </div>
         <div class="spl-box"></div>
         </div>
 
-        <div class="location">
-           <div id="map"></div>
+        <div class="location topbar">
+          <div class="caption"> Our Location </div>
+          <div id="map"></div>
+          <div class="address">12334 Main Street  Atlanta Georgia</div>
+          <div class="phone">555-555-1234 &middot; 555-555-1236 &middot; Map &middot; Directions</div>
 
 
         </div>
+        <div class="clear"></div>
       </div>
       <main class="main_content">
 
@@ -67,15 +77,16 @@
             <div class="story">
                <p> It all started with two women who loved to entertain their friends with delicious food, wonderful wine, hand-crafted cocktails, and an inviting atmosphere. The culinary genius behind our menu is the wonderful, Ashima. She brings an eclectic mix of traditional French cuisine with a modern flavorful twist. Her partner, Marie, is the cocktail connoisseur who’s life passion is to make sure you get the perfect drink to bring out the flavors of your meal. Over time, their legendary dinner parties turned into exactly where you find yourself sitting today. 
                 We welcome you to La Petite Rose!</p>
+                <div class="storyimg"><img src ="../images/color.jpg" style="width:100%; height: 400px;"></div>
             </div>
           </div>
           <div class="tabContent" id="menu">
-            <div class="menu-title"> Our Dinner Selection </div>
-            <div class="appetizer-title">APPETIZERs...</div>
+            <div class="menu-title"> Our Dinner Selection... </div>
+            <div class="menu-caption">APPETIZERS</div>
               <div class="appetizers"></div>
-              <div class="entrees-title">ENTREES</div>
+              <div class="menu-caption">ENTREES</div>
               <div class="entrees"></div>
-              <div class="sides-title">SIDES A LA CARTE </div>
+              <div class="menu-caption">SIDES A LA CARTE </div>
               <div class="sides"></div>
           </div>
 
@@ -85,20 +96,20 @@
                   <div class="name"> Full Name  </div>
                   <input id="postName" type="text">
                   <div class="guests"> Number Of Guests </div>
-                  <input id="postGuests" type="text">
-                  <div class="date"> Date  </div>
+                  <input id="postGuests" type="text"></br>
+                  <div class="date"> Date  </div></br>
                   <input id="postDate" type="text">
                   <div class="notes"> Special Notes </div>
                   <input id="postNotes" type="text">
                 </form>
-                  <div class ="seatingPref">
+                  <div class ="seatingPref">Seating Preference</div>
                     <select id="seating">
                       <option value="indoor">Indoor</option>
                       <option value="outdoor">Outdoor</option>
                     </select>
-                  </div>
+      
                   <div class ="button">
-                    <button type="button">Reserve Table</button>
+                    <button id="select"type="button">Reserve Table</button>
                   </div>
                 </div>
           </div>
@@ -107,6 +118,7 @@
           <div class="photo-title"> Food Photos...</div>
           <div class="photos"></div>
         </div>
+        <div class="clear"></div>
         
       </main>
       <script type="text/javascript">

@@ -1,4 +1,4 @@
- 	
+
 import _ from 'lodash';
 import $ from 'jquery';
 import {printNews} from "./news"
@@ -34,23 +34,51 @@ function extractSpecial(data){
 function processSides(sides){
 	var price = sides.price;
 	var title = sides.item;
-	$(".sides").append(`<div class="mtitle">${title}</div><div class="mprice">${price}</div></br>`)
+	$(".sides").append(`<div class="divTable">
+		<div class="divTableBody">
+		<div class="divTableRow">
+		<div class="divTableCell mtitle">${title}</div>
+		<div class="divTableCell" style="text-align: right;">${price}</div>
+		</div>
+		</div>`);		
 	
 }
 function processEntrees(entrees){
 	var price = entrees.price;
 	var title = entrees.item;
 	var description =entrees.description;
-	$(".entrees").append(`<div class="mtitle">${title}</div><div class="mprice">${price}</div>
-							<div class="mdescrip">${description}</div>`)
-		
+	$(".entrees").append(`<div class="divTable">
+		<div class="divTableBody">
+		<div class="divTableRow">
+		<div class="divTableCell mtitle">${title}</div>
+		<div class="divTableCell" style="text-align: right;">${price}</div>
+		</div>
+		<div class="divTableRow">
+		<div class="divTableCell mdescrip">${description}</div>
+		<div class="divTableCell" style="width: 130px; border-left: 1px solid black;">
+			<span class="icons"><i class="material-icons" onmouseover="document.getElementById('hoverDivEntrees${entrees.id}').style.display='block';" onmouseout="document.getElementById('hoverDivEntrees${entrees.id}').style.display='none';">announcement</i><div class="hoverDivContainer"><div id="hoverDivEntrees${entrees.id}" class="hoverDiv" style="display: none;">Lorem ipsum</div></div><i class="material-icons" style="width:25px;">star_rate</i><i class="material-icons">keyboard_arrow_down</i>
+		<i class="material-icons">whatshot</i>
+		</div>
+		</div>
+		</div>`);		
 }
+
 function processAppetizers(appetizers){
 	var price = appetizers.price;
 	var title = appetizers.item;
 	var description =appetizers.description;
-	$(".appetizers").append(`<div class="mtitle">${title}</div><div class="mprice">${price}</div>
-							<div class="mdescrip">${description}</div>`)
+	$(".appetizers").append(`<div class="divTable">
+		<div class="divTableBody">
+		<div class="divTableRow">
+		<div class="divTableCell mtitle">${title}</div>
+		<div class="divTableCell" style="text-align: right;">${price}</div>
+		</div>
+		<div class="divTableRow">
+		<div class="divTableCell mdescrip">${description}</div>
+		<div class="divTableCell" style="width: 130px; border-left: 1px solid black;"><span class="icons"><i class="material-icons">announcement</i><i class="material-icons" style="width:25px;">star_rate</i><i class="material-icons">keyboard_arrow_down</i><i class="material-icons">whatshot</i></span></div>
+		</div>
+		</div>
+		</div>`);		
 }
 
 function getMenu(data){
