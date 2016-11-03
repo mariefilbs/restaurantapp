@@ -47,6 +47,35 @@ function processEntrees(entrees){
 	var price = entrees.price;
 	var title = entrees.item;
 	var description =entrees.description;
+	var allergies = entrees.allergies;
+	var fav = entrees.favorite;
+	var vegan = entrees.vegan;
+	var spicy = entrees.spicy;
+	var allergiesClass = "";
+	var allergyText ="NO ALLERGIES";
+	if(allergies == 1) {
+		allergiesClass = "active";
+		allergyText= "ALLERGIES";
+	}
+	var favClass = "";
+	var favText ="LIKE";
+	if(fav == 1) {
+		favClass = "active";
+		favText= "FAVORITE";
+	}
+	var veganClass = "";
+	var veganText ="NOT VEGAN";
+	if(vegan == 1) {
+		veganClass = "active";
+		veganText= "VEGAN";
+	}
+	var spicyClass = "";
+	var spicyText ="NOT SPICY";
+	if(spicy == 1) {
+		spicyClass = "active";
+		spicyText= "SPICY";
+	}
+	
 	$(".entrees").append(`<div class="divTable">
 		<div class="divTableBody">
 		<div class="divTableRow">
@@ -55,9 +84,11 @@ function processEntrees(entrees){
 		</div>
 		<div class="divTableRow">
 		<div class="divTableCell mdescrip">${description}</div>
-		<div class="divTableCell" style="width: 130px; border-left: 1px solid black;">
-			<span class="icons"><i class="material-icons">announcement</i><i class="material-icons" style="width:25px;">star_rate</i><i class="material-icons">keyboard_arrow_down</i>
-		<i class="material-icons">whatshot</i>
+		<div class="divTableCelli" style="width: 130px; border-left: 1px solid black;">
+			<span class="icons"><i class="material-icons toolTip ${allergiesClass}">announcement<span class="toolTipText">${allergyText}</span></i>
+			<i class="material-icons toolTip ${favClass}" style="width:25px;">star_rate<span class="toolTipText">${favText}</span></i>
+			<i class="material-icons toolTip ${veganClass}">keyboard_arrow_down<span class="toolTipText">${veganText}</span></i>
+			<i class="material-icons toolTip ${spicyClass}">whatshot<span class="toolTipText">${spicyText}</span></i>
 		</div>
 		</div>
 		</div>`);		
@@ -67,6 +98,36 @@ function processAppetizers(appetizers){
 	var price = appetizers.price;
 	var title = appetizers.item;
 	var description =appetizers.description;
+	var allergies = appetizers.allergies;
+	var fav = appetizers.favorite;
+	var vegan = appetizers.vegan;
+	var spicy = appetizers.spicy;
+	var allergiesClass = "";
+	var allergyText ="NO ALLERGIES";
+	if(allergies == 1) {
+		allergiesClass = "active";
+		allergyText= "ALLERGIES";
+	}
+	var favClass = "";
+	var favText ="LIKE";
+	if(fav == 1) {
+		favClass = "active";
+		favText= "FAVORITE";
+	}
+	var veganClass = "";
+	var veganText ="NOT VEGAN";
+	if(vegan == 1) {
+		veganClass = "active";
+		veganText= "VEGAN";
+	}
+	var spicyClass = "";
+	var spicyText ="NOT SPICY";
+	if(spicy == 1) {
+		spicyClass = "active";
+		spicyText= "SPICY";
+	}
+	
+
 	$(".appetizers").append(`<div class="divTable">
 		<div class="divTableBody">
 		<div class="divTableRow">
@@ -75,7 +136,11 @@ function processAppetizers(appetizers){
 		</div>
 		<div class="divTableRow">
 		<div class="divTableCell mdescrip">${description}</div>
-		<div class="divTableCell" style="width: 130px; border-left: 1px solid black;"><span class="icons"><i class="material-icons">announcement</i><i class="material-icons" style="width:25px;">star_rate</i><i class="material-icons">keyboard_arrow_down</i><i class="material-icons">whatshot</i></span></div>
+		<div class="divTableCelli" style="width: 130px; border-left: 1px solid black;">
+		<span class="icons"><i class="material-icons toolTip ${allergiesClass}">announcement<span class="toolTipText">${allergyText}</span></i>
+		<i class="material-icons toolTip ${favClass}" style="width:25px;">star_rate<span class="toolTipText">${favText}</span></i>
+		<i class="material-icons toolTip ${veganClass}">keyboard_arrow_down<span class="toolTipText">${veganText}</span></i>
+		<i class="material-icons toolTip ${spicyClass}">whatshot<span class="toolTipText">${spicyText}</span></i>
 		</div>
 		</div>
 		</div>`);		
@@ -95,7 +160,6 @@ function getMenu(data){
 	
 function checkMenu (){
 	var menu = requestMenu();
-	console.log(menu);
 	menu.then(getMenu);
 	menu.then(extractSpecial);
 }
