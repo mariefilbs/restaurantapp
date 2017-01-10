@@ -3,7 +3,7 @@
 ##Weekend Assignment: To build a home page for a restaurant 
 This was our first group assignment. A classmate and I worked on the assignment together for the weekend.
 
-**[View live on Surge](https://http://tiy-mariefilbey-restaurantapp.surge.sh/)
+**[View live on Surge](https://tiy-mariefilbey-restaurantapp.surge.sh/)
 
 ###Objective:
 
